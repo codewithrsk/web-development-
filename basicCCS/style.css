@@ -1,0 +1,16 @@
+/* *{
+    background: #000;
+}
+*{
+    color: red;
+}
+p{
+    color: aquamarine;
+    border: 3px dotted rgb(56, 16, 233);
+} */
+table{
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid #000;
+}
