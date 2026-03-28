@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&display=swap');
+
+.photo {
+ 
+  width: 200px;
+  height: 200px;
+  object-fit: cover;  /* Prevents the image from stretching */
+  border-radius: 50%;
+
+  box-shadow: 10px 10px 2px 0px rgb(133, 130, 130);
+
+
+}
+*{
+    background: rgb(244, 202, 209);
+    color: rgb(28, 29, 29);
+}
+div{
+
+   
+    font-family: "Bitcount Grid Double Ink", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
