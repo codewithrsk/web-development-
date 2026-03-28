@@ -6,51 +6,70 @@
     <title>Document</title>
   </head>
   <body>
-    <h2>Task 4 – Quiz List</h2>
+    <h2>Task 6 – Nested Lists (All Types)</h2>
     <h3>Description:</h3>
-    <p>Create a question-answer list using ordered list and sub-list.</p>
+    <p>Create nested lists combining unordered + ordered lists.</p>
     <p>Tags Used:</p>
     <ul>
+      <li>ul</li>
       <li>ol</li>
       <li>li</li>
-      <li>Nested (ol) (for options)</li>
+      <li>start attribute (for custom numbering)</li>
     </ul>
     <hr />
-    <p><b>Quiz</b></p>
-    <ol>
+    <h2>Nested Unordered List</h2>
+    <ul>
       <li>
-        HTML is an ______?
-        <ol type="i">
-          <li>Markup language</li>
-          <li>Programming language</li>
-          <li>none of these</li>
+        Main Category 1
+        <ul>
+          <li>Subcategory 1.1</li>
+          <li>Subcategory 1.2</li>
+        </ul>
+      </li>
+      <li>
+        Main Category 2
+        <ul>
+          <li>Subcategory 2.1</li>
+          <li>Subcategory 2.2</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Nested Ordered List with Start Attribute</h2>
+    <ol start="5">
+      <li>
+        First main item
+        <ol type="a">
+          <li>First nested item</li>
+          <li>Second nested item</li>
         </ol>
       </li>
       <li>
-        CSS is used for
-        <ol type="i">
-          <li>Styling</li>
-          <li>scripting</li>
-          <li>none of these</li>
-        </ol>
-      </li>
-      <li>
-        Which of the following is dynamic form of HTML?
-        <ol type="i">
-          <li>XML</li>
-          <li>DHTML</li>
-          <li>none of these</li>
-        </ol>
-      </li>
-      <li>
-        Which of the following can be linked with HTML and CSS?
-        <ol type="i">
-          <li>javascript</li>
-          <li>C++</li>
-          <li>none of these</li>
+        Second main item
+        <ol type="a">
+          <li>Third nested item</li>
+          <li>Fourth nested item</li>
         </ol>
       </li>
     </ol>
+
+    <h2>Mixed Nested List</h2>
+    <ul>
+      <li>
+        Web Development
+        <ol>
+          <li>HTML</li>
+          <li>
+            CSS
+            <ul>
+              <li>Flexbox</li>
+              <li>Grid</li>
+            </ul>
+          </li>
+          <li>JavaScript</li>
+        </ol>
+      </li>
+    </ul>
     <a href="../../my_Web_page/subindex2.html">Back</a>
     |
     <a href="../../my_Web_page/index.html">Back to Home</a>
