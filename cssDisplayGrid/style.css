@@ -1,0 +1,25 @@
+#outerdiv{
+    background: plum;
+    border: 1px solid #000;
+    width: 600px;
+    height: 600px;
+    display: grid;    
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-items: center;
+    column-gap: 10px;
+    
+
+}
+.innerdiv{
+    border: 2px solid #000;
+    width: 100px;
+    height: 100px;
+    background: papayawhip;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    object-fit: cover;
+    border-radius: 50%;
+
+}

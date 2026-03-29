@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  background: palevioletred;
+  display: inline-block;
+}
+span {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  background: palegreen;
+  display: inline-block;
+}
+h1{
+    display:inline;
+    background: palegoldenrod;
+}
