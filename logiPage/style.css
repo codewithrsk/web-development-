@@ -4,18 +4,19 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
 body {
     height: 100vh;
-    background: linear-gradient(to right, #4e73df, #3b5bdb);
+    background: linear-gradient(to right, #2e5deb, #3b5bdb);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container {
+
+.main{
     display: flex;
     gap: 40px;
+   
 }
 
 .card {
@@ -23,6 +24,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     width: 320px;
+    height: 100%;
 }
 
 .card h2 {
@@ -34,7 +36,7 @@ body {
     content: "";
     width: 40px;
     height: 3px;
-    background: #4e73df;
+    background: #1449e9;
     position: absolute;
     left: 0;
     bottom: -5px;

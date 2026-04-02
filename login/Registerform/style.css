@@ -1,0 +1,56 @@
+#navbar{
+    
+    background: #b4e0f3;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(15, 14, 12);
+    position: fixed;
+    align-items: center;
+    
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+    
+}
+.navlinks{
+    display: flex;
+    gap: 20px;
+    font-size: medium;
+    
+    
+
+}
+button{
+    height: 30px;
+    margin: 20px;
+    background: #3393dc;
+    border-radius: 5px;
+    box-shadow: 5px 2px 0 blueviolet;
+    align-content: center;
+
+}
+.maindiv{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call{
+    color: aliceblue;
+}
+main{
+    margin: 100px;
+    margin-left: 300px;
+    margin-right: 300px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        align-items: center;
+        justify-content: center;
+    }
+}
+h1{
+    align-items: center;
+    justify-content: center;
+}

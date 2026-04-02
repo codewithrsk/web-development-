@@ -1,0 +1,28 @@
+#navbar{
+    
+    background: #b4e0f3;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(15, 14, 12);
+    padding: 8px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+    img{
+        height: 5px;
+    }
+}
+.navlinks{
+    display: flex;
+    gap: 20px;
+    
+
+}
+button{
+    height: 30px;
+    margin: 10px;
+    background: #3393dc;
+
+}

@@ -1,0 +1,34 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+@keyframes ravi {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    top: 100px;
+    left: 100px;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    top: 50px;
+    left: 0px;
+  }
+  100% {
+    top: 120px;
+    left: 0px;
+  }
+}
+#box {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  position: absolute;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: ravi 10s linear 0s infinite;
+}
