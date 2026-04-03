@@ -1,0 +1,21 @@
+.w-200 {
+  width: 200px;
+}
+.red-color {
+  background: red;
+}
+.h-500{
+    height: 500px;
+}
+.box-border{
+    border: solid black;
+}
+.white-text{
+    color: white;
+}
+.dark-text{
+    color: black;
+}
+.green-color{
+    background: greenyellow;
+}

@@ -1,0 +1,93 @@
+#navbar{
+    
+    background: #b4e0f3;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(15, 14, 12);
+    position: fixed;
+    align-items: center;
+    
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+    
+}
+.navlinks{
+    display: flex;
+    gap: 20px;
+    font-size: medium;
+    
+    
+
+}
+button{
+    height: 30px;
+    margin: 20px;
+    background: #3393dc;
+    border-radius: 5px;
+    box-shadow: 5px 2px 0 blueviolet;
+    align-content: center;
+
+}
+div {
+  border: 1px solid #000;
+}
+
+#outerdiv{
+    border: 2px solid black;
+}
+#leftPart{
+    border: 1px solid black;
+}
+#outerDiv {
+  display: flex;
+}
+
+#leftPart {
+  height: fit-content;
+  width: 70%;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 15px;
+}
+
+#rightPart {
+    background-color: rgb(249, 142, 142);
+  height: 85vh;
+  padding: 20px;
+  width: 30%;
+
+  ol {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #leftPart {
+    grid-template-columns: auto auto auto;
+  }
+
+  #rightPart{
+    background-color: rgb(203, 250, 134);
+  }
+}
+@media screen and (max-width: 760px) {
+  #leftPart {
+    grid-template-columns: auto auto;
+  }
+
+  #rightPart{
+    background-color: rgb(156, 156, 247);
+  }
+}
+@media screen and (max-width: 420px) {
+  #leftPart {
+    grid-template-columns: auto;
+  }
+
+  #rightPart{
+    background-color: rgb(244, 212, 153)
+  }
+}
+
