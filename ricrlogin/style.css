@@ -13,16 +13,12 @@
     
 }
 .navlinks{
-    display: flex;#000
+    display: flex;
     gap: 20px;
     font-size: medium;
     justify-content: space-between;
     position: sticky;
-    align-items: left;
-    
-    
-    
-
+    align-items: left; 
 }
 
 main {
