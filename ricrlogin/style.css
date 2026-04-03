@@ -13,7 +13,7 @@
     
 }
 .navlinks{
-    display: flex;
+    display: flex;#000
     gap: 20px;
     font-size: medium;
     justify-content: space-between;
@@ -126,25 +126,80 @@ p{
 .navi{
     display: flex;
 }
-
-footer{
-    background: #1279f7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.interlfoot{
-    background: #1279f7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.subfoot{
-    display: inline;
-    align-items: center;
-    justify-content: center;
-}
 #submm{
     display: block;
     margin: auto;
+}
+#foot{
+    background: rgb(90, 152, 203);
+    
+     p{
+        color: rgba(255, 255, 255, 0.811);
+        display: flex;
+        gap: 10px;
+        margin: 30px;
+        font-size: medium;
+        text-decoration: none;
+    }
+    a{
+        color: rgba(255, 255, 255, 0.687);
+        display: flex;
+        gap: auto;
+        margin: 10px;
+        font-size: medium;
+        text-decoration: none;
+        
+    }
+}
+svg{
+    size: 10px;
+}
+#interlfoot{
+display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  color: white;
+   
+
+
+}
+.subfoot{
+    display: inline-block;
+   font-size: auto;
+    justify-content: space-between;
+    gap: 5px;
+}
+#socallink{
+display: flex;
+gap: 5px;
+}
+#logoofricr{
+    width: 500px;
+}
+#fb:hover{
+    color: greenyellow;
+}
+#yt:hover{
+    color: greenyellow;
+}
+#ins:hover{
+    color: greenyellow;
+}
+#linkedin:hover{
+    color: greenyellow;
+}
+#nav2{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 10px 20px;
+}
+#slogin{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #1f2a44;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
 }

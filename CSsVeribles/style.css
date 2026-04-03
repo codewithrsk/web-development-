@@ -1,0 +1,38 @@
+:root {
+  --main-color: red;
+  --sub-main: rgb(190, 6, 197);
+}
+button {
+  padding: 5px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#Login {
+  background: var(--main-color);
+}
+#Register {
+  background: var(--sub-main);
+}
+h1 {
+  color: var(--main-color);
+}
+h3 {
+  color: var(--sub-main);
+}
+
+td {
+  color: var(--sub-main);
+}
+th {
+  color: var(--main-color);
+}
+p {
+  color: var(--sub-main);
+}
+table{
+    border-collapse: collapse;
+    td,th{
+        border: 1px solid black;
+
+    }
+}
