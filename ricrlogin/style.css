@@ -13,13 +13,14 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
+  
 }
 
 #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #b4e0f3;
+  background: whitesmoke;
   padding: 10px 20px;
   flex-wrap: wrap;
 }
@@ -59,7 +60,7 @@ main {
 .container {
   max-width: 900px;
   margin: auto;
-  background: rgba(175, 217, 241, 0.571);
+  background:rgba(214, 242, 254, .5);
   padding: 25px;
   border-radius: 15px;
   box-shadow: 5px 5px 5px gray;
@@ -118,7 +119,7 @@ select {
   margin: auto;
   width: 150px;
   padding: 12px;
-  background: #0077b6;
+  background: #081a28;
   color: white;
   border: none;
   border-radius: 50px;
@@ -135,7 +136,7 @@ button:hover {
 }
 
 footer {
-  background: #012e99;
+  background: #041233;
   color: white;
   margin-top: 40px;
   padding: 30px 20px;
