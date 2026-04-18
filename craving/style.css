@@ -1,0 +1,79 @@
+:root {
+  --color-primary: #c2410c;
+  --color-primary-content: #ffffff;
+  --color-secondary: #6b7280;
+  --color-neutral: #3f3f46;
+  --color-neutral-content: #f4f4f5;
+  --color-base-100: #fff8f1;
+  --color-base-200: #f5ede5;
+  --color-base-300: #e7d9c9;
+  --color-base-content: #2d1b10;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-base-100);
+}
+
+.navbar {
+  background-color: var(--color-primary);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.hero {
+  min-height: 85vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.card {
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.footer{
+     h6 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+}
+
+.footer
+{ 
+  ul, li {
+  margin-bottom: 6px;
+}
+}
+
+.small-text {
+  font-size: 13px;
+}
+
+.footer {
+    a {
+  text-decoration: none;
+}
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
