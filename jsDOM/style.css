@@ -4,3 +4,9 @@
 .divShow{
     display: block;
 }
+button{
+    
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
