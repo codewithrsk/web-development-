@@ -8,7 +8,7 @@
 // arr=[]
 // console.log(arr);
 
-let arr = [12, 23, 34, 45, 56, 67, 78, 89, 90];
+let arr = [12, 23, 34, 45, 56, 67, 78, 89, 90,12];
 // console.log("og  arrays ");
 // console.log(arr);
 
@@ -43,3 +43,9 @@ let arr = [12, 23, 34, 45, 56, 67, 78, 89, 90];
 arr.forEach((element) => {
   console.log(element);
 });
+arr.sort((a, b) => a - b);
+console.log(arr);
+console.log(arr.find((val) => val > 12));
+console.log(arr.findIndex((val)=>  val==12));
+console.log(arr.findLastIndex((val)=> val==12));
+
