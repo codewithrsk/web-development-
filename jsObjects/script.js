@@ -73,16 +73,23 @@ console.log(arr2.filter((val) => val > 20));
 
 console.log(arr2);
 
+console.log(arr2.slice(4, 6));
 
-console.log(arr2.slice(4,6));
-
-let ab="this is web-deblopment class"
-
+let ab = "this is web-deblopment class";
 
 console.log(ab);
 
 console.log(ab.split(" "));
 console.log(ab.split("-"));
+arr2.forEach((index, num) => {
+  console.log(num, index);
+});
+
+let a = "This is a String";
+console.log(a.charAt(1));
+console.log(a.toUpperCase());
+console.log(a.toLowerCase());
+
 
 
 
