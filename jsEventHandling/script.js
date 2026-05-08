@@ -13,7 +13,7 @@ function Green() {
 }
 
 function Yellow() {
-  document.getElementById("bulb1").style.backgroundColor = "yellow";
+  document.getElementById("bulb1").style.backgrounColor = "yellow";
 }
 
 document
@@ -22,5 +22,5 @@ document
 
   function ChangeBulbColor() {
   const color = document.getElementById("bulb1Color").value;
-  document.getElementById("bulb1").style.backgroundColor = color;
+  document.getElementById("ABCD").style.backgroundColor = color;
 }
