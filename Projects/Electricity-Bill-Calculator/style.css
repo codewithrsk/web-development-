@@ -1,0 +1,14 @@
+body {
+  background: url(https://imgs.search.brave.com/lKARJffeJdOtIXbcTJQxdNK2c-JxmCnPZ8FLkQ1B6N4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9vcmFu/Z2UtYmctMjU0NTA3/MjYuanBn);
+}
+
+.bill {
+  margin-top: 200px;
+  margin-left: 200px;
+  background: white;
+  padding: 30px;
+  width: 350px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

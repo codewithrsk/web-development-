@@ -1,5 +1,23 @@
 let display = document.getElementById("display");
 
+let one = document.addEventListener("keydown", (event) => {
+  console.log(event.key);
+  
+  if (event.key === "Enter") {
+    calculate();
+    return;
+  }
+  appendValue(event.key);
+});
+
+function append(one) {
+  if (display.innerText === "0") {
+    display.innerText = one;
+  } else {
+    display.innerText += one;
+  }
+}
+
 function appendValue(value) {
   if (display.innerText === "0") {
     display.innerText = value;
