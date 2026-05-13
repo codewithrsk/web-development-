@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-primary p-3 text-center">
+      <h2>Registration Form</h2>
+
+      <form action="submit"></form>
+    </div>
+    <main>
+      <div class="container mt-4 p-5 bg-light border rounded-3 shadow">
+        <form action="">
+          <section>
+            <div>
+              <div class="p-2 mt-2">
+                <label for="fullName">Full Name</label>
+                <input
+                  type="text"
+                  name="fullName"
+                  id="fullName"
+                  class="form-control"
+                  placeholder="Rahul Kumar"
+                />
+                <span class="text-danger small" id="fullNameError"
+                  >Invalid Name</span
+                >
+              </div>
+              <div class="p-2 mt-2">
+                <label for="Email">EMAIL</label>
+                <input
+                  type="email"
+                  name="Email"
+                  id="Email"
+                  class="form-control"
+                  placeholder="RahulKumar@gmAIL.COM"
+                />
+                <span class="text-danger small" id="EmailError"
+                  >Invalid Email</span
+                >
+              </div>
+              
+              <div class="p-2 mt-2">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  class="form-control"
+                  placeholder="Rahul Kumar"
+                />
+                <span class="text-danger small" id="phoneError"
+                  >  </span
+                >
+              </div>
+              <div class="p-2 mt-2">
+                <label for="d0b">Date Of Barth</label>
+                <input type="date" name="dob" id="dob" class="form-control" />
+                <span class="text-danger small" id="dobError">Invalid DOB</span>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+                <label for="Gender">Gender</label>
+                <div class="d-flex"><input type="radio" name="gender" id="male" value="male"/>Male</div>
+                <div class="d-flex"><input type="radio" name="gender" id="female" value=""/>Female</div>
+                <div class="d-flex"><input type="radio" name="gender" id="other" />Other</div>
+              </div>
+
+            <div class="input-group">
+              <label>Last Completed Qualification</label>
+              <select>
+                <option>Select Qualification</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="deploma">deploma</option>
+                <option value="ug">Postgraduate</option>
+                <option value="pg">graduate</option>
+              </select>
+              <span class="text-danger small" id="phoneError"
+                >  </span
+              >
+            </div>
+
+            <div class="input-group">
+              <label>Course Information:</label>
+              <select>
+                <option>Select Course</option>
+                <option value="iit">IIT-JEE</option>
+                <option value="neet">NEET</option>
+                <option value="be">Banking Exams</option>
+                <option value="Upsc">UPSC</option>
+              </select>
+              <span class="text-danger small" id="phoneError"
+                >  </span
+              >
+            </div>
+          </section>
+          <button class="btn btn-primary m-4 ">Submit </button>
+        </form>
+      </div>
+    </main>
+
+    <!-- script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

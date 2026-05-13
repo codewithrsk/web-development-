@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+  line-height: 1.5;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: whitesmoke;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+#navbar span {
+  margin: 0 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#call {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#slogin {
+  padding: 10px 12px;
+  border: none;
+  background: #0077b6;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background:rgba(214, 242, 254, .5);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px gray;
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+input:focus {
+  outline: none;
+}
+
+.input-group.full {
+  flex: 100%;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#submm {
+  display: block;
+  margin: auto;
+  width: 150px;
+  padding: 12px;
+  background: #081a28;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button {
+  box-shadow: 5px 5px 3px 1px gray;
+}
+button:hover {
+  box-shadow: none;
+  background: #21a7ef68;
+}
+
+footer {
+  background: #041233;
+  color: white;
+  margin-top: 40px;
+  padding: 30px 20px;
+}
+
+#interlfoot {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.subfoot {
+  flex: 1;
+  min-width: 220px;
+}
+
+.subfoot img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.subfoot a {
+  display: block;
+  color: #dddddda0;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.subfoot {
+  a:hover {
+    color: white;
+  }
+}
+#socallink {
+  display: flex;
+  gap: 5px;
+  width: 50px;
+}
+#fb:hover {
+  color: #39f336;
+}
+#socallink {
+  a:hover {
+    color: #39f336;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navlinks {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+  main {
+    padding-top: 180px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  #navbar span {
+    display: block;
+    margin: 5px 0;
+  }
+
+  #slogin {
+    width: 100%;
+  }
+
+  #submm {
+    font-size: 14px;
+  }
+  main {
+    padding-top: 230px;
+  }
+}
