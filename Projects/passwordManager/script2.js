@@ -19,12 +19,6 @@ function getdatafromlocalstroage() {
 
     passwordData.appendChild(TR);
   });
-
-  //   document.getElementById("passwordData").innerHTML=`<tr>
-  //               <td>${data.siteName}</td>
-  //               <td>${data.username}</td>
-  //               <td>${data.Password}</td>
-  //             </tr>`;
 }
 
 getdatafromlocalstroage();
