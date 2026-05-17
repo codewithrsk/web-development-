@@ -9,8 +9,7 @@ document.getElementById("pmform").addEventListener("submit", (element) => {
     siteName: SiteName,
     username: UserName,
     Password: Password,
-  };
-  console.log(DataPacket);
+  }
   dataLocalStroage(DataPacket);
   document.getElementById("siteName").value = "";
   document.getElementById("username").value = "";

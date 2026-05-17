@@ -14,15 +14,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="bg-dark text-light">
     <header class="bg-primary text-light p-3 text-center">
-      <div>
-        <h1>Password Manager</h1>
-        <div>
-          <a href="index.html" class="text-decoration-none">Add New Password</a>
-          <a href="index2.html" class="text-decoration-none"
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Password Manager</h2>
+
+        <div class="d-flex gap-5">
+          <a href="index.html" class="text-decoration-none text-white fs-5"
+            >Add new Password</a
+          >
+          <a
+            href="showPassword.html"
+            class="text-decoration-none text-white fs-5"
             >View Saved Password</a
           >
         </div>
@@ -30,21 +35,26 @@
     </header>
 
     <main>
-      <div class="border rounded mx-auto w-75 m-3">
-        <table class="text-center">
-          
-            <tr class="border">
-              <th>Website</th>
-              <th>User Name</th>
+      <div class="w-50 mx-auto rounded border p-3 mt-4">
+        <table class="table table-striped table-bordered">
+          <thead class="table-warning text-center">
+            <tr>
+              <th>WebsiteName</th>
+              <th>UserName</th>
               <th>Password</th>
             </tr>
-            <tr>
-              <td>asdfgh</td>
-              <td>asdfghjklghjerty</td>
-            </tr>
-          <tbody></tbody>
+          </thead>
+
+          <tbody class="table-light text-center" id="passwordData"></tbody>
         </table>
       </div>
     </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script2.js"></script>
   </body>
 </html>
