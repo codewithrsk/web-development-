@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body class="bg-dark text-light">
+    <header class="bg-primary text-light p-3 text-center">
+      <h2>Weather</h2>
+    </header>
+
+    <main>
+      <div class="container border p-3 rounded mt-2 w-50">
+        <div>
+            <input type="text" class="input-group" id="cityName" placeholder="City Name">
+        </div>
+        
+          <div class="d-flex align-items-center justify-content-center mt-4">
+            <button class="btn btn-primary" onclick="getWeather()">
+              Weather
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
