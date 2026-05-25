@@ -1,40 +1,73 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-  </head>
-  <body class="bg-dark text-light">
-    <header class="bg-primary text-light p-3 text-center">
-      <h2>Weather</h2>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
 
-    <main>
-      <div class="container border p-3 rounded mt-2 w-50">
-        <div>
-            <input type="text" class="input-group" id="cityName" placeholder="City Name">
-        </div>
-        
-          <div class="d-flex align-items-center justify-content-center mt-4">
-            <button class="btn btn-primary" onclick="getWeather()">
-              Weather
-            </button>
-          </div>
-        </div>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+  />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="weather-card text-center">
+
+    <h2 class="mb-4">
+      <i class="bi bi-cloud-sun-fill"></i>
+      Weather App
+    </h2>
+
+    <div class="mb-3">
+      <input
+        type="text"
+        id="cityName"
+        class="form-control"
+        placeholder="Enter city name"
+      />
+    </div>
+
+    <button class="btn btn-weather" onclick="getWeather()">
+      Get Weather
+    </button>
+
+    <div class=" mt-4" id="weatherBox">
+
+      <i class="bi bi-brightness-high-fill weather-icon"></i>
+
+      <div class="city mt-2" id="city"></div>
+
+      <div class="temp" id="temperature"></div>
+
+      <div class="details mt-3">
+
+        <p class="mb-2">
+          <i class="bi bi-moisture"></i>
+          Humidity :
+          <span id="humidity"></span>%
+        </p>
+
+        <p class="mb-0">
+          <i class="bi bi-wind"></i>
+          Wind :
+          <span id="wind"></span> km/h
+        </p>
+
       </div>
-    </main>
-    <!-- script -->
-    <script src="script.js"></script>
-  </body>
-</html>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>\
