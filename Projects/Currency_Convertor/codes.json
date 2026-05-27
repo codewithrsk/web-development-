@@ -1,0 +1,12 @@
+[
+  {"Country": "United States", "Currency_Name": "United States Dollar", "Currency_Code": "USD", "Country_Code": "US"},
+  {"Country": "India", "Currency_Name": "Indian Rupee", "Currency_Code": "INR", "Country_Code": "IN"},
+  {"Country": "Eurozone", "Currency_Name": "Euro", "Currency_Code": "EUR", "Country_Code": "EU"},
+  {"Country": "United Kingdom", "Currency_Name": "British Pound Sterling", "Currency_Code": "GBP", "Country_Code": "GB"},
+  {"Country": "Japan", "Currency_Name": "Japanese Yen", "Currency_Code": "JPY", "Country_Code": "JP"},
+  {"Country": "Canada", "Currency_Name": "Canadian Dollar", "Currency_Code": "CAD", "Country_Code": "CA"},
+  {"Country": "Australia", "Currency_Name": "Australian Dollar", "Currency_Code": "AUD", "Country_Code": "AU"},
+  {"Country": "China", "Currency_Name": "Chinese Yuan", "Currency_Code": "CNY", "Country_Code": "CN"},
+  {"Country": "Germany", "Currency_Name": "Euro", "Currency_Code": "EUR", "Country_Code": "DE"},
+  {"Country": "France", "Currency_Name": "Euro", "Currency_Code": "EUR", "Country_Code": "FR"}
+]
