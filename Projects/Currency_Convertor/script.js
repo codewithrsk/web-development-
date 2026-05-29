@@ -122,9 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     return true;
-  }
-
-  
+  }  
 
   async function convertCurrency() {
     if (!validate()) return;
