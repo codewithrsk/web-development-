@@ -1,9 +1,8 @@
-#firstDiv{
-  background: red;
+a{
+  text-decoration: none !important;
 }
-#head{
-  background: #2f8fe9;
-  height: 50px;
-  width: 100%;
-  margin: 0%;
+
+a:hover{
+  text-decoration: line !important;
+
 }
