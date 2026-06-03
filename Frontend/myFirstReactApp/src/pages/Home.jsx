@@ -1,7 +1,9 @@
 function Home() {
   return (
     <>
-      <div id="foot">This is Home</div>
+      <main>
+        <div className="fs-1 d-flex align-items-center justify-content-center m-auto">THIS IS HOME</div>
+      </main>
     </>
   );
 }
