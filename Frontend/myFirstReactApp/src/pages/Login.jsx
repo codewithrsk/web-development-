@@ -1,12 +1,10 @@
 import { BsEye } from "react-icons/bs";
-
-
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
     <>
       <main className="bgimage mt-0">
-        
         <div className="container-fluid  position-relative d-flex align-items-center ">
           <div className="container my-5 d-flex  justify-content-center ">
             <div className="row justify-content-center  w-100">
@@ -26,7 +24,7 @@ function Login() {
                     </div>
 
                     <div className="mb-3">
-                      <label className="form-label">Password</label>
+                      <lable className="form-label">Password</lable>
                       <div className="input-group">
                         <input
                           type="password"
@@ -34,7 +32,7 @@ function Login() {
                           placeholder="Enter your password"
                         />
                         <span className="input-group-text">
-                          <BsEye/>
+                          <BsEye />
                         </span>
                       </div>
                     </div>
@@ -49,17 +47,19 @@ function Login() {
                       </a>
                     </div>
 
-                    <button className="btn w-100 text-white bg-color">Login</button>
+                    <button className="btn w-100 text-white bg-color">
+                      Login
+                    </button>
                   </form>
 
                   <div className="text-center mt-4">
                     <p className="text-muted mb-1">Don't have an account?</p>
-                    <a
-                      href="rigester.html"
+                    <Link
+                      to={"/register"}
                       className="text-danger fw-semibold text-decoration-none"
                     >
                       Create an account
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

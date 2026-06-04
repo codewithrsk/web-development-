@@ -1,11 +1,13 @@
-a{
+a {
   text-decoration: none !important;
 }
 
-a:hover{
+a:hover {
   text-decoration: line !important;
-
 }
-.bgimage{
+.bgimage {
   background: url("./assets/image.png");
+}
+main {
+  height: 100%;
 }

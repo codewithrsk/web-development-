@@ -4,7 +4,7 @@ function Header() {
   return (
     <>
       <div className="bg-primary-subtle p-2 d-flex justify-content-between align-items-center">
-        <div className="text-primary fs-4 fw-bold">My Compony</div>
+        <div className="text-primary h1 fw-bold">My Compony</div>
 
         <div className="d-flex gap-4">
          <Link to={"/"}>Home</Link>
