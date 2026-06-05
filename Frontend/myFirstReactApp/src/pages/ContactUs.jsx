@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
 function Content() {
+  const [name , setName] = useState("USER");
   return (
     <>
       <main>
@@ -21,6 +23,8 @@ function Content() {
                         type="text"
                         className="form-control"
                         placeholder="Enter your full name"
+                        id="fn"
+                        onChange={(e)=>setName(e.target.value)}
                       />
                     </div>
 
@@ -57,6 +61,12 @@ function Content() {
                         Login
                       </button>
                     </Link>
+
+                    <hr />
+
+                    <div className="bg-danger">
+                      <span>Your name is {name}</span>
+                    </div>
                   </form>
                 </div>
               </div>

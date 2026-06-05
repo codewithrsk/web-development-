@@ -5,9 +5,20 @@ a {
 a:hover {
   text-decoration: line !important;
 }
-.bgimage {
-  background: url("./assets/image.png");
-}
+/* .bgimage {
+  /* background: linear-gradient(to right, #2e5deb, #a8b8f7); */
+
+  /* background: linear-gradient(to right, #2e5deb, #a8b8f7); */
+  /* background: url("./assets/image.png"); */
+/* } */
 main {
   height: 100%;
+  background: #000;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(102, 102, 102, 1) 50%,
+    rgba(166, 166, 166, 1) 100%
+  );
+  /* background: linear-gradient(to right, #2e5deb, #a8b8f7); */
 }
