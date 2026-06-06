@@ -1,9 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-
 function Content() {
-  const [name , setName] = useState("USER");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [about, setAbout] = useState("");
+  const [message, setMessage] = useState("");
+  const logeemassage=(e)=>{
+     e.preventDefault();
+     console.log(name);
+     
+  }
+
   return (
     <>
       <main>
@@ -17,14 +26,14 @@ function Content() {
                     Have a question? We'd love to hear from you.
                   </p>
 
-                  <form>
+                  <form onSubmit={logeemassage}>
                     <div className="mb-3">
                       <input
                         type="text"
                         className="form-control"
                         placeholder="Enter your full name"
-                        id="fn"
-                        onChange={(e)=>setName(e.target.value)}
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                       />
                     </div>
 
@@ -33,6 +42,8 @@ function Content() {
                         type="email"
                         className="form-control"
                         placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
                     <div className="mb-3">
@@ -40,6 +51,8 @@ function Content() {
                         type="tel"
                         className="form-control"
                         placeholder="Enter your phone number"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
                       />
                     </div>
                     <div className="mb-3">
@@ -47,6 +60,8 @@ function Content() {
                         type="text"
                         className="form-control"
                         placeholder="What is this about"
+                        value={about}
+                        onChange={(e) => setAbout(e.target.value)}
                       />
                     </div>
                     <div className="mb-3">
@@ -54,19 +69,18 @@ function Content() {
                         type="text"
                         className="form-control pb-5"
                         placeholder="Enter your message hear..."
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                       />
                     </div>
                     <Link to={"/login"}>
-                      <button className="btn w-100 text-white btn-primary rounded rounded-5">
-                        Login
+                      <button
+                        className="btn w-100 text-white btn-primary rounded rounded-5"
+                        type="submit"
+                      >
+                        Submit
                       </button>
                     </Link>
-
-                    <hr />
-
-                    <div className="bg-danger">
-                      <span>Your name is {name}</span>
-                    </div>
                   </form>
                 </div>
               </div>

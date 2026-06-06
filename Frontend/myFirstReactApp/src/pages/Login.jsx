@@ -1,7 +1,17 @@
+import { useState } from "react";
 import { BsEye } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPasswoed] = useState("");
+  const handaleSubmit = (e) => {
+    e.preventDefault();
+    console.log("email :", email);
+    console.log("password :", password);
+    setEmail("");
+    setPasswoed("");
+  };
   return (
     <>
       <main className="bgimage mt-0">
@@ -13,13 +23,15 @@ function Login() {
                   <h2 className="fw-bold text-danger mb-2">Welcome Back</h2>
                   <p className="text-muted mb-4">Login to My Compony</p>
 
-                  <form>
+                  <form onSubmit={handaleSubmit}>
                     <div className="mb-3">
                       <label className="form-label">Email</label>
                       <input
                         type="email"
                         className="form-control"
                         placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
 
@@ -30,6 +42,8 @@ function Login() {
                           type="password"
                           className="form-control"
                           placeholder="Enter your password"
+                          value={password}
+                          onChange={(e) => setPasswoed(e.target.value)}
                         />
                         <span className="input-group-text">
                           <BsEye />
@@ -47,7 +61,10 @@ function Login() {
                       </a>
                     </div>
 
-                    <button className="btn w-100 text-white bg-color">
+                    <button
+                      className="btn w-100 text-white bg-primary "
+                      type="submit"
+                    >
                       Login
                     </button>
                   </form>

@@ -1,3 +1,4 @@
+import  image  from "../assets/myCompony.png";
 function Footer() {
   return (
     <>
@@ -11,7 +12,7 @@ function Footer() {
         <div className="row justify-content-between text-center text-md-start">
           <div className="col-md-2 mb-4">
             <img
-              src="http://cravings.ricr.in/assets/circleLogo-DpCri5UD.png"
+              src={image}
               className="img-fluid rounded-circle"
               width="110"
             />

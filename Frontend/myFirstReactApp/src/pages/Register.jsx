@@ -1,7 +1,14 @@
 function Regester() {
   return (
     <>
-      <div>This is Regester</div>
+      <main>
+        <div className="d-flex justify-content-center">
+          <div className="border p-3">
+            <label htmlFor="username">Username</label>
+            <input type="text" />
+          </div>
+        </div>
+      </main>
     </>
   );
 }
