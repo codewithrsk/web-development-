@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import { BrowserRouter, Routes,Route } from "react-router-dom";
 import Footer from "./components/Footer";
+import Feedback from "./pages/Feedback";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/register" element={<Register/>}/>
+      <Route path="/feedback" element={<Feedback/>}/>
 
     </Routes>
     <Footer/>

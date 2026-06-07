@@ -75,11 +75,9 @@ function Footer() {
             <div class="col-md-2 mb-4">
               <h6>Support</h6>
               <ul class="list-unstyled">
-                <li>
-                  <a href="feedback.html" class="text-light">
-                    Feedback
-                  </a>
-                </li>
+                <Link to={"/feedback"} class="text-light">Feedback
+                </Link>
+                
                 <li>
                   <a href="#" class="text-light">
                     Help
