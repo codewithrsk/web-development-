@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import { BsEye } from "react-icons/bs";
 function Login() {
   return (
-    <>
-      {" "}
+    <>      
       <div className="container-fluid bgimage position-relative d-flex align-items-center">
         <div className="container">
           <div className="row">
