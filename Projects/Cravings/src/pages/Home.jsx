@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import image from "../assets/hotal2.png"
+// import image from "../assets/hotal2.png"
 
 function Home() {
   return (
