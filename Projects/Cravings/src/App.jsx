@@ -1,15 +1,14 @@
-const App = () => {
+import Home from "./pages/Home";
+// import Header from "./components/Header";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+function App() {
   return (
     <>
-    <main>
-      <div className="bg-[url('/favicon.svg')]"></div>
-      <div className="w-100% bg-amber-800 h-10 flex justify-center"></div>
-       <div className="bg-green-200 text-amber-800 p-3.25">App</div>
-       <button className="bg-sky-500 border px-5 py-2 mt-3 mx-5 rounded border-red-900 shadow-2xl box-border">submit</button>
-    </main>
-     
+      <div className="my-2">sdfghokjhvcvbnmklkmnb </div>
+      <Home/>
     </>
   );
-};
+}
 
 export default App;
