@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import image from "../assets/hotal2.png"
 
 function Home() {
@@ -25,14 +25,14 @@ function Home() {
             </p>
 
             <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
-              {/* <Link
+              <Link
                 to="/register"
                 className="rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-700"
               >
                 Sign Up
               </Link>
 
-              <Link
+              {/* <Link 
                 to="/restaurants"
                 className="rounded-lg bg-white px-6 py-3 font-medium text-gray-900 transition hover:bg-gray-100"
               >
