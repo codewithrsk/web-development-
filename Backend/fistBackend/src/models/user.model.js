@@ -11,6 +11,13 @@ const UserSchema = mongoose.Schema(
       required: true,
       unique: true,
     },
+    photo :{
+        url:{
+
+            require:true
+        }
+
+    },
     phone: {
       type: String,
       required: true,
