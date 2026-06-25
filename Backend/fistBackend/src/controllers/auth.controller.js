@@ -15,17 +15,27 @@ export const Register = async (req, res) => {
       res.status(409).json({ message: "User Already Registerd" });
       return;
     }
-    db.createUser(req.body)
 
-    // const newuser =  User.create(
-    //   fullName,
-    //   email,
-    //   password,
-    //   phone,
-    //   gender,
-    //   dob,
-    // );
-  } catch (error) {}
+    const photourl = `https://placehold.co/600x400?text=${fullName.charAt(0).toUpperCase()}`;
+    const photo = {
+      url: photourl,
+      publicId: null,
+    };
+
+    const newUser = await User.create({
+      fullName,
+      email,
+      password,
+      phone,
+      gender,
+      dob,
+      photo,
+    });
+
+    res.status(201).json({ message: "user created Successfully" });
+  } catch (error) {
+    res.status(500).json({ message: "Interal Server Error" });
+  }
 };
 
 export const Loginuser = async (req, res) => {
@@ -35,12 +45,18 @@ export const Loginuser = async (req, res) => {
       res.status(400).data({ message: "Bad Request" });
       return;
     }
-    const existingUser = await User.findOne({ email });
-    if (existingUser) {
-      res.json({ message: "login Succesfull" });
+
+    const findUser = await User.findOne({ email });
+    if (!existingUser) {
+      res.status(401).json({ message: "Not Rigester User" });
       return;
     }
-  } catch (error) {}
+
+    res.status(200).json({ message: "login Succesfull" });
+    return;
+  } catch (error) {
+    res.status(500).json({ message: "Interal Server Error" });
+  }
 
   // await res.json({ massage: "login successfull from controal" });
 };
