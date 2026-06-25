@@ -1,13 +1,14 @@
 import error from "mongoose/lib/error/index.js";
 import User from "../models/user.model.js";
 
-export const Register = async (req, res) => {
+export const Register = async (req, res,next) => {
   try {
     const { fullName, email, password, phone, gender, dob } = req.body;
 
     if (!fullName || !email || !password || !phone || !gender || !dob) {
-      res.status(400).json({ message: "All Feilds Required" });
-      return;
+     const error = new Error("All Filed Requred")
+     error.statusCode=400
+      return next(error);
     }
 
     const existingUser = await User.findOne({ email });

@@ -21,6 +21,14 @@ app.post("/login", (req, res) => {
   res.json({ massage: "login Sucesfull" });
 });
 
+// Defult Error Handling
+
+app.use((err, req, res, next) => {
+  const ErrMessage = err.massage || "Internal Server Error";
+  const ErrStatusCode = err.statusCode || 500;
+  res.status( )
+});
+
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
