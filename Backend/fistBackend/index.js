@@ -24,9 +24,10 @@ app.post("/login", (req, res) => {
 // Defult Error Handling
 
 app.use((err, req, res, next) => {
-  const ErrMessage = err.massage || "Internal Server Error";
-  const ErrStatusCode = err.statusCode || 500;
-  res.status( )
+  const ErrMessage = err.message || "Internal Server Error";
+  const ErrStausCode = err.statusCode || 500;
+
+  res.status(ErrStausCode).json({ message: ErrMessage });
 });
 
 const port = process.env.PORT || 5000;

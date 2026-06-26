@@ -1,6 +1,4 @@
-import error from "mongoose/lib/error/index.js";
 import User from "../models/user.model.js";
-import error from "mongoose/lib/error/index.js";
 
 export const Register = async (req, res, next) => {
   try {
@@ -45,25 +43,39 @@ export const Loginuser = async (req, res) => {
   try {
     const { email, password } = req.body;
     if (!email || !password) {
-     const error = new Error("All fields Required");
+      const error = new Error("All fields Required");
       error.statusCode = 400;
       return next(error);
     }
+console.log(1);
 
-    const findUser = await User.findOne({ email });
+    const existingUser = await User.findOne({ email });
+    console.log(2);
+    
     if (!existingUser) {
-      const error = new error("Not Rigester User")
-      error.status(401)
+      const error = new error("Not Rigester User");
+      error.statuscode=401;
       return next(error);
     }
+    console.log(3);
+    
+    if (password !== existingUser.password) {
+      const error = new error("Invalid password");
+      error.status(401);
+      return next(error);
+    }
+    
 
-    res.status(200).json({ message: "login Succesfull" });
+    res.status(200).json({
+      message: "login Succesfull",
+      data: existingUser,
+    });
     return;
-  } catch (error) {
+
+  } 
+  catch (error) {
     res.status(500).json({ message: "Interal Server Error" });
   }
-
-  // await res.json({ massage: "login successfull from controal" });
 };
 export const Logout = (req, res) => {
   res.json({ massage: "logout successfull" });
