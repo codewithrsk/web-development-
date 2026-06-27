@@ -9,6 +9,7 @@ const app = express();
 
 app.use(express.json());
 
+
 app.use("/auth", AuthRouter);
 app.use("/public", PublicRouter);
 
