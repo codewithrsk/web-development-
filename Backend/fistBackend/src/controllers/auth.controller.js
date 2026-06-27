@@ -1,10 +1,10 @@
 import User from "../models/user.model.js";
+import bcrypt from "bcrypt";
+const SALLT =bcrypt.genSalt(10);
 
-export const Register = async (req, res, next) => { 
+export const RegisterUser = async (req, res, next) => {
   try {
-    
     const { fullName, email, password, phone, gender, dob } = req.body;
-
 
     if (!fullName || !email || !password || !phone || !gender || !dob) {
       const error = new Error("All fields Required");
@@ -19,31 +19,39 @@ export const Register = async (req, res, next) => {
       return next(error);
     }
 
-    const photourl = `https://placehold.co/600x400?text=${fullName.charAt(0).toUpperCase()}`;
+    const photoUrl = `https://placehold.co/600x400?text=${fullName.charAt(0).toUpperCase()}`;
+
     const photo = {
-      url: photourl,
+      url: photoUrl,
       publicId: null,
     };
+
+    const SALLT = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(password, SALLT)
 
     const newUser = await User.create({
       fullName,
       email,
-      password,
+      password : hashedPassword,
       phone,
       gender,
       dob,
       photo,
     });
 
-    res.status(201).json({ message: "user created Successfully" });
+    res.status(201).json({ message: "User Created Successfully" });
   } catch (error) {
+    console.log(error.message);
     next();
   }
 };
 
-export const Loginuser = async (req, res, next) => {
+
+ 
+
+
+export const LoginUser = async (req, res, next) => {
   try {
-    
     const { email, password } = req.body;
     if (!email || !password) {
       const error = new Error("All fields Required");
@@ -52,30 +60,26 @@ export const Loginuser = async (req, res, next) => {
     }
 
     const existingUser = await User.findOne({ email });
-    
-    
+
     if (!existingUser) {
       const error = new Error("Not Rigester User");
-      error.statusCode=401;
+      error.statusCode = 401;
       return next(error);
     }
-    
+
     if (password !== existingUser.password) {
       const error = new error("Invalid password");
       error.status(401);
       return next(error);
     }
-    
 
     res.status(200).json({
       message: "login Succesfull",
       data: existingUser,
     });
     return;
-
-  } 
-  catch (error) {
-     next();
+  } catch (error) {
+    next();
     res.status(500).json({ message: "Interal Server Error" });
   }
 };
